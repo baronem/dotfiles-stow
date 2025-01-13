@@ -26,10 +26,6 @@ export PATH=/opt/homebrew/bin:$PATH
 export GOPATH=$HOME/.local/share/go
 export PATH=$GOPATH/bin:$PATH
 
-# BUN
-export BUN_INSTALL=$HOME/.local/share/bun
-export PATH=$BUN_INSTALL/bin:$PATH
-
 # AIDER
 export AIDER_ARCHITECT=true
 export AIDER_EDIT_FORMAT=architect

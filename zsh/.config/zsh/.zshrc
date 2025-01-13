@@ -41,8 +41,4 @@ source $ZDOTDIR/evals
 # promt
 source $ZDOTDIR/prompt
 
-
-# bun completions
-[ -s "/Users/mb/.bun/_bun" ] && source "/Users/mb/.bun/_bun"
-
 . "$HOME/.local/share/../bin/env"
