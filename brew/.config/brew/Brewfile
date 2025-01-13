@@ -8,10 +8,10 @@ brew "jq"
 brew "bat"
 brew "wget"
 brew "tmux"
-brew "alacritty"
 brew "neovim"
 brew "openssl"
 brew "docker"
+cask "alacritty"
 
 # Languages & Dev tools
 brew "go"
