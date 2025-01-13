@@ -18,3 +18,9 @@ brew "go"
 brew "node"
 brew "python"
 brew "uv"
+
+# Apps
+cask "brave-browser"
+cask "google-chrome"
+cask "telegram"
+cask "bitwarden"
