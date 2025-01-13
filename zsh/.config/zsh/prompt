@@ -1,0 +1,4 @@
+#!/bin/bash
+
+NEWLINE=$'\n'
+PROMPT="%F{magenta}%n%f %F{green}%1~%f %F{yellow}%f "

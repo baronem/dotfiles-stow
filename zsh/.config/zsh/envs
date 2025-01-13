@@ -1,0 +1,42 @@
+#!/bin/bash
+
+export BROWSER=brave
+export EDITOR=nvim
+export VISUAL=nvim
+
+# HISTORY
+export SHELL_SESSIONS_DISABLE=1
+export HISTFILE=$HOME/.local/share/zsh/history
+export HISTSIZE=25000
+export SAVEHIST=20000
+export LESSHISTFILE=$HOME/.local/share/less/history
+
+# NPM
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/config
+export NPM_CONFIG_CACHE=$XDG_CACHE_HOME/npm
+export NPM_CONFIG_TMP=$XDG_RUNTIME_DIR/npm
+
+# PATH
+export PATH=$HOME/.local/bin:$PATH
+
+# HOMEBREW
+export PATH=/opt/homebrew/bin:$PATH
+
+# GO
+export GOPATH=$HOME/.local/share/go
+export PATH=$GOPATH/bin:$PATH
+
+# BUN
+export BUN_INSTALL=$HOME/.local/share/bun
+export PATH=$BUN_INSTALL/bin:$PATH
+
+# AIDER
+export AIDER_ARCHITECT=true
+export AIDER_EDIT_FORMAT=architect
+export AIDER_EDITOR_EDIT_FORMAT=diff
+export AIDER_MODEL=sonnet
+export AIDER_EDITOR_MODEL=deepseek
+export AIDER_WEAK_MODEL=deepseek
+
+export AIDER_DARK_MODE=true
+

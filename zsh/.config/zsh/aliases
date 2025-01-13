@@ -1,0 +1,10 @@
+#!/bin/bash
+
+alias ls="eza"
+alias la="eza -lha"
+alias tree="eza --tree"
+
+alias grep="grep --color=auto"
+
+alias repos="cd $HOME/Repos"
+alias confdir="cd $XDG_CONFIG_HOME && v ."
