@@ -41,4 +41,3 @@ source $ZDOTDIR/evals
 # promt
 source $ZDOTDIR/prompt
 
-. "$HOME/.local/share/../bin/env"
