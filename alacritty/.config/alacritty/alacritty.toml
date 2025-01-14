@@ -2,23 +2,6 @@
 [env]
 TERM = "xterm-256color"
 
-[font.normal]
-family = "Hack Nerd Font Mono"
-style = "Regular"
-
-[font.bold]
-family = "Hack Nerd Font Mono"
-style = "Bold"
-
-[font.bold_italic]
-family = "Hack Nerd Font Mono"
-style = "Bold Italic"
-
-[font.italic]
-family = "Hack Nerd Font Mono"
-style = "Italic"
-
-
 [font.offset]
 x = 0
 y = 0
@@ -46,5 +29,5 @@ y = 8
 [general]
 import = [
     "~/.config/alacritty/catppuccin-mocha.toml",
-    "~/.config/alacritty/machine-specific.toml"
+    "~/.config/alacritty/machine-specific.toml",
 ]
