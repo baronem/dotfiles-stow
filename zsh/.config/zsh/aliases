@@ -1,8 +1,15 @@
 #!/bin/bash
 
-alias ls="eza"
-alias la="eza -lha"
-alias tree="eza --tree"
+if command -v eza >/dev/null 2>&1; then
+    alias ls="eza"
+    alias la="eza -lha"
+    alias tree="eza --tree"
+else
+    echo "Warning: eza not installed, using standard ls commands"
+    alias ls="ls"
+    alias la="ls -lha"
+    alias tree="ls -R"
+fi
 
 alias grep="grep --color=auto"
 
