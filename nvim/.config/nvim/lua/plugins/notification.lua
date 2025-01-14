@@ -1,5 +1,3 @@
-local noice = require("noice")
-
 return {
 	{
 		"rcarriga/nvim-notify",
@@ -78,6 +76,7 @@ return {
 				vim.cmd([[messages clear]])
 			end
 
+			local noice = require("noice")
 			noice.setup(opts)
 			require("telescope").load_extension("noice")
 		end,
