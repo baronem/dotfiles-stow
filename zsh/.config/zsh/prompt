@@ -1,4 +1,9 @@
 #!/bin/bash
 
-NEWLINE=$'\n'
-PROMPT="%F{magenta}%n%f %F{green}%1~%f %F{yellow}%f "
+open_bracket="%F{#4e535c}[%f"
+close_bracket="%F{#4e535c}]%f"
+username="%F{magenta}%B%n%b%f"
+working_dir="%F{yellow}%B%1~%b%f"
+prompt_char="%F{green}%(#.#.$)%f"
+
+PROMPT="${open_bracket}${username}${close_bracket}${open_bracket}${working_dir}${close_bracket}${prompt_char} "
