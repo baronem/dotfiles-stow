@@ -19,9 +19,6 @@ export NPM_CONFIG_TMP=$XDG_RUNTIME_DIR/npm
 # PATH
 export PATH=$HOME/.local/bin:$PATH
 
-# HOMEBREW
-export PATH=/opt/homebrew/bin:$PATH
-
 # GO
 export GOPATH=$HOME/.local/share/go
 export PATH=$GOPATH/bin:$PATH

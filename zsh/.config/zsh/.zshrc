@@ -22,9 +22,6 @@ compinit
 ### End Generated Settings ###
 ##############################
 
-# run init
-source $ZDOTDIR/init
-
 # keep history
 setopt appendhistory
 setopt SHARE_HISTORY
@@ -32,8 +29,18 @@ setopt SHARE_HISTORY
 # colors
 autoload -U colors && colors
 
+# run init
+source $ZDOTDIR/init
+
 # environment variables
 source $ZDOTDIR/envs
+
+# os specific
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    source $ZDOTDIR/os_mac
+elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    source $ZDOTDIR/os_linux
+fi
 
 # aliases
 source $ZDOTDIR/aliases
