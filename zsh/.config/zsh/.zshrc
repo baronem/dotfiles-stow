@@ -22,6 +22,9 @@ compinit
 ### End Generated Settings ###
 ##############################
 
+# run init
+source $ZDOTDIR/init
+
 # keep history
 setopt appendhistory
 setopt SHARE_HISTORY

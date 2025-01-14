@@ -1,0 +1,12 @@
+#!/bin/bash
+
+zsh_share_dir="$HOME/.local/share/zsh"
+zsh_history_file="$zsh_share_dir/history"
+
+if [ ! -d "$zsh_share_dir" ]; then
+    mkdir -p "$zsh_share_dir" || { echo "Failed to create $zsh_share_dir"; exit 1; }
+fi
+
+if [ ! -f "$zsh_history_file" ]; then
+    touch "$zsh_history_file" || { echo "Failed to create $zsh_history_file"; exit 1; }
+fi
