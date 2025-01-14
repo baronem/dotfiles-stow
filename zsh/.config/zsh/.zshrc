@@ -38,9 +38,6 @@ source $ZDOTDIR/envs
 # aliases
 source $ZDOTDIR/aliases
 
-# evals
-source $ZDOTDIR/evals
-
 # promt
 source $ZDOTDIR/prompt
 
