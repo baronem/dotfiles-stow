@@ -18,7 +18,6 @@ local lang_servers = {
         disable_fmt = true,
     },
     tsserver = {},
-    ["nil_ls"] = {},
     gopls = {},
     templ = {},
     pyright = {
