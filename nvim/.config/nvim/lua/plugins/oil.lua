@@ -7,11 +7,4 @@ return {
 			show_hidden = true,
 		},
 	},
-	keys = {
-		{
-			"<leader>fv",
-			vim.cmd.Oil,
-			desc = "Open Oil.nvim file view",
-		},
-	},
 }
