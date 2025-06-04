@@ -5,8 +5,8 @@ return {
 	config = function()
 		local configs = require("nvim-treesitter.configs")
 		configs.setup({
-            highlight = { enable = true },
-            indent = { enable = true },
+			highlight = { enable = true },
+			indent = { enable = true },
 			ensure_installed = {
 				-- vim
 				"vimdoc",
@@ -26,6 +26,10 @@ return {
 				"xml",
 				"html",
 				"json",
+				"markdown",
+				"markdown_inline",
+				-- "latex",
+				"typst",
 
 				-- misc
 				"dockerfile",

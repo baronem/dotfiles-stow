@@ -1,5 +1,3 @@
-vim.g.mapleader = " "
-
 -- vim.keymap.set("n", "<leader>ls", ":buffers<CR>")
 -- vim.keymap.set("n", "<leader>bb", ":buffers<CR>:buffer<Space>")
 
