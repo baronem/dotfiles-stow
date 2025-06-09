@@ -20,3 +20,7 @@ fi
 
 export SSH_AGENT_PID
 export SSH_AUTH_SOCK
+
+# NPM PATH - NON-ROOT
+export NPM_GLOBAL=$HOME/.local/lib/npm-global/bin
+export PATH=$NPM_GLOBAL:$PATH
