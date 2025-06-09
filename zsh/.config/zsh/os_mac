@@ -4,5 +4,3 @@
 
 # HOMEBREW
 export PATH=/opt/homebrew/bin:$PATH
-
-
