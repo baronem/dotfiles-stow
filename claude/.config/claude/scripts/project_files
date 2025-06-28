@@ -1,0 +1,1 @@
+git ls-files -z --cached --others --exclude-standard | while IFS= read -r -d '' f; do test -e ${f} && printf '%s\n' ${f}; done

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash($HOME/.config/claude/scripts/project_files)"
+    ],
+    "deny": []
+  }
+}
