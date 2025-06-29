@@ -33,3 +33,5 @@ export AIDER_WEAK_MODEL=deepseek
 
 export AIDER_DARK_MODE=true
 
+# CUSTOM
+export REPOS_PATH=$HOME/Dev/repos

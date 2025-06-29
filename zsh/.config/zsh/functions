@@ -1,0 +1,42 @@
+#!/bin/bash
+
+fzf_cd() {
+    local target_path="$1"
+
+    if [ -z "$target_path" ]; then
+        echo "Error: No path provided"
+        return 1
+    fi
+
+    if [ ! -d "$target_path" ]; then
+        echo "Error: Directory $target_path does not exist"
+        return 1
+    fi
+
+    if ! command -v fzf > /dev/null 2>&1; then
+        echo "Error: fzf is not installed or not in PATH"
+        return 1
+    fi
+
+
+    local selected_dir=$(find "$target_path" -maxdepth 1 \( -type d -o \( -type l -xtype d \) \) -not -path "$target_path" | fzf --height=40% --reverse --border)
+
+
+    if [ -n "$selected_dir" ]; then
+        cd "$selected_dir"
+    fi
+}
+
+# Specific wrapper functions
+repos() {
+    if [ -z "$REPOS_PATH" ]; then
+        echo "Error: REPOS_PATH environment variable is not set"
+        return 1
+    fi
+    fzf_cd "$REPOS_PATH"
+}
+
+configs() {
+    fzf_cd "$HOME/.config"
+}
+

@@ -48,3 +48,5 @@ source $ZDOTDIR/aliases
 # promt
 source $ZDOTDIR/prompt
 
+# functions
+source $ZDOTDIR/functions
