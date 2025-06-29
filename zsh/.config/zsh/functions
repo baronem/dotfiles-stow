@@ -18,8 +18,11 @@ fzf_cd() {
         return 1
     fi
 
+    # Original - Linux specific (not BSD/macOS compatible)
+    # local selected_dir=$(find "$target_path" -maxdepth 1 \( -type d -o \( -type l -xtype d \) \) -not -path "$target_path" | fzf --height=40% --reverse --border)
 
-    local selected_dir=$(find "$target_path" -maxdepth 1 \( -type d -o \( -type l -xtype d \) \) -not -path "$target_path" | fzf --height=40% --reverse --border)
+    # Updated - Theoretically compatible for linux, BSD, and macOS
+    local selected_dir=$({ find "$target_path" -maxdepth 1 -type d -not -path "$target_path"; find "$target_path" -maxdepth 1 -type l -exec test -d {} \; -print; } | fzf --height=40% --reverse --border)
 
 
     if [ -n "$selected_dir" ]; then
